@@ -12,44 +12,37 @@
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    
-
+    <script src="script.js"></script>
 
 
     <!--NavBar -->
-      <nav class="navbar col-12  m-auto position-fixed bg-orange" style="z-index: 999;" style="background-color: #FFBD59;">
-    
-    
-        <div class="container-fluid" style="background-color: #FFBD59;">
-          <a class="navbar-brand"  href="#">
-            <img src="./img/logo.jpg" alt="Logo" width="150" height="70" class="d-inline-block align-text-top"> 
-
-            <a class="navbar-brand" href="#">DENUNCIE</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#adotar">Dicas para adotar</a>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#ong">ONGs</a>
-        </li><li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
-  </li>
-  
-      </ul>
-      
-    </div>
-  </div>
-          <ul class="nav justify-content-center">
+    <nav class="navbar col-12 m-auto position-fixed bg-orange" style="z-index: 999; background-color: #FFBD59;">
+      <div class="container-fluid" style="background-color: #FFBD59;">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.jpg" alt="Logo" width="150" height="70" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"></a>
+              <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions" onclick="fecharDropdown()">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#adotar" onclick="fecharDropdown()">Dicas para adotar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#ong" onclick="fecharDropdown()">ONGs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre" onclick="fecharDropdown()">Sobre</a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    
 
 
 
@@ -333,65 +326,27 @@ site conta com várias informações para que quem quiser adotar, possa adotar c
 <br>
 
 <!-- Rodapé-->
-<footer class="bg-white text-dark pt-5 pb-4">
-  
-  <div class="container text-center text-md-left">
-  
-  <div class="row text-center text-md-left">
-
- 
-  <div class="col-md3 col-lg-3 col-x1-3 mx-auto mt-3">
-            <h1 class="text-uppercase mp-4 font-weight-bold text-warning">PROTEGER</h1> 
-  
-            <p>DENUNCIE JÁ</p>
-  
-          </div>
-       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h3 class="text-uppercase mb-4 font-weight-bold text-warning">PRINCIPAL</h3>
-          <p>
-              <a href="#" class="text-white" style="text-decoration: none;">Início</a>
-          </p>
-          <p>
-              <a href="ong" class="text-white" style="text-decoration: none;">ONGs</a>
-          </p> 
-       </div>
-       
-       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-           <h3 class="text-uppercase mb-4 font- weight-bold text-warning">fÓRUM</h3>
-           <p>
-              <a href="#" class="text-white" style="text-decoration: none;">Cadrastro</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Denúncias</a>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Contato</h2>
+        <p>
+          Endereço: animais, 123 - Aracaju - Sergipe<br>
+          Telefone: (00) 1234-5678<br>
+          Email: proteger@example.com
         </p>
-       </div>
-       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h3 class="text-uppercase mb-4 font- weight-bold text-warning">Contatos</h3>
-           <p>
-              <i class="fas fa-home mr-3"></i>Aracaju-SE
-           </p>
-           <p>
-              <i class="fas fa-envelope mr-3"></i>proteger@gmail.com
-           </p><p>
-              <i class="fas fa-phone mr-3"></i>999999999
-           </p>
-       </div>
-
       </div>
-
-      <hr class="mb-4">
-      <div class="row align-items-center">
-      <div class="col-md-7 cpl-lg-8">
-          <p>Feito por:
-             <a style="text-decoration:none;">
-               <strong class="text-warning">Marina Couto</strong>
-             </a>
-
-          </p>
-             
+      <div class="footer-section">
+        <h2>Navegação</h2>
+        <ul class="footer-links">
+          <li><a href="#carouselExampleCaptions">Início</a></li>
+          <li><a href="#ong">ONGs</a></li>
+          <li><a href="#adotar">Dicas</a></li>
+        </ul>
       </div>
-      </div>
+    </div>
+    <p class="copy">&copy; Marina Couto. Todos os direitos reservados.</p>
   </div>
 </footer>
-
 </body>
