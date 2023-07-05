@@ -36,7 +36,7 @@
               <a class="nav-link active" aria-current="page" href="#ong" onclick="fecharDropdown()">ONGs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre" onclick="fecharDropdown()">Sobre</a>
+              <a class="nav-link active" aria-current="page" href="#denuncie" onclick="fecharDropdown()">Denuncie</a>
             </li>
           </ul>
         </div>
@@ -311,14 +311,22 @@ Você terá gastos mensais com alimentação, veterinário, vermifugação, e et
 <br>
 
 
-<!--sobre-->
+<!--Formulário-->
 
-<h1>Sobre a Proteger</h1>
-<div class="container" id="sobre">
-<p> Somos uma organização que visa a proteção dos animais, para isso
-  contamos com a sua ajuda para denunciar qualquer tipo de abuso contra
-  os animais. Lutamos para criar uma vida melhor para todos os animais. Além das denúncias, nosso
-site conta com várias informações para que quem quiser adotar, possa adotar com segurança. </p>
+<h1>Denuncie</h1>
+<div class="container" id="denuncie">
+  <form id="formulario-denuncia" action="/processar-denuncia" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="denuncia">Denúncia:</label><br>
+    <textarea id="denuncia" name="denuncia" rows="5" cols="40" required></textarea><br><br>
+    
+    <input type="submit" value="Enviar denúncia" onclick="exibirAlerta(event)">
+</form>
 
 </div>
 <br>
