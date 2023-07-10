@@ -6,15 +6,17 @@ function fecharDropdown() {
   }
 
   //formulário
-  function exibirAlerta(event) {
-    event.preventDefault(); 
-
+  function submitForm() {
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let denuncia = document.getElementById('denuncia').value;
   
-    alert("Denúncia enviada com sucesso!");
-
-    
-    window.onbeforeunload = function() {
-      return null;
-    };
-    window.location.href = document.referrer;
+    if (nome.trim() === '' || email.trim() === '' || denuncia.trim() === '') {
+      alert('Por favor, preencha todos os campos do formulário');
+      return false;
+    } else {
+      alert('Denúncia enviada com sucesso!');
+      return false; 
+    }
   }
+  
